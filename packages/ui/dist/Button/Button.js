@@ -5,9 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _Button = _interopRequireDefault(require("./Button/Button"));
+var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var _default = _Button["default"];
+function Button() {
+  return /*#__PURE__*/_react["default"].createElement("button", {
+    type: "button"
+  }, "Click Me!");
+}
+
+var _default = Button;
 exports["default"] = _default;
